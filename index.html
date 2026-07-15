@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-ChWLQbin.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BR5Pv-6e.css">
+    <script type="module" crossorigin src="/kinoteatr-danya/assets/index-teAzfT-7.js"></script>
+    <link rel="stylesheet" crossorigin href="/kinoteatr-danya/assets/index-BR5Pv-6e.css">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -307,20 +307,20 @@
           </label>
           <label class="form-field video-link-field">
             <span>Ссылка на фильм — бесплатно для больших видео</span>
-            <input id="uploadVideoUrl" name="videoUrl" type="url" inputmode="url" maxlength="2048" placeholder="YouTube, Rutube или VK Видео" />
-            <small>Вставьте ссылку на видео или выберите файл до 50 МБ ниже.</small>
+            <input id="uploadVideoUrl" name="videoUrl" type="url" inputmode="url" maxlength="2048" placeholder="YouTube, Rutube, VK Видео или Google Drive" />
+            <small>Вставьте ссылку на видео или загрузите файл в ваш Google Drive ниже.</small>
           </label>
           <div class="upload-choice" aria-hidden="true"><span>или</span></div>
           <label class="file-drop" id="fileDrop">
             <input id="uploadFile" name="video" type="file" accept="video/*" />
             <span class="file-icon">↑</span>
             <strong id="fileName">Выберите видеофайл</strong>
-            <small>MP4, WebM или MOV · до 50 МБ на бесплатном облаке</small>
+            <small>MP4, WebM или MOV · до 10 ГБ в Google Drive</small>
           </label>
         </div>
         <div class="upload-progress" id="uploadProgress" hidden><div><i id="uploadProgressBar"></i></div><span id="uploadProgressText">Загрузка: 0%</span></div>
         <div class="upload-footer" id="uploadFooter" hidden>
-          <p>Добавляйте маленькие файлы прямо в облако, а большие фильмы — бесплатной ссылкой с YouTube, Rutube или VK Видео.</p>
+          <p>Файл загрузится частями в ваш Google Drive. При первой загрузке Google попросит подтвердить доступ.</p>
           <button class="button button-primary" id="uploadSubmit" type="submit"><span>＋</span> Добавить фильм</button>
         </div>
       </form>
@@ -333,5 +333,6 @@
     </div>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
   </body>
 </html>
