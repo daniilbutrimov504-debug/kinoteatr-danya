@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/kinoteatr-danya/assets/index-rSwQ--A1.js"></script>
-    <link rel="stylesheet" crossorigin href="/kinoteatr-danya/assets/index-BR5Pv-6e.css">
+    <script type="module" crossorigin src="/kinoteatr-danya/assets/index-BnU9hvEU.js"></script>
+    <link rel="stylesheet" crossorigin href="/kinoteatr-danya/assets/index-DGJ_pIXZ.css">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -312,15 +312,18 @@
           </label>
           <div class="upload-choice" aria-hidden="true"><span>или</span></div>
           <label class="file-drop" id="fileDrop">
-            <input id="uploadFile" name="video" type="file" accept=".mp4,.m4v,.webm,.mov,.avi,video/mp4,video/webm,video/quicktime,video/avi,video/x-msvideo" />
+            <input id="uploadFile" name="video" type="file" accept="video/*,.mp4,.m4v,.webm,.mov,.avi,.mkv,.wmv,.flv,.mts,.m2ts,.mpeg,.mpg,.3gp,.ts" />
             <span class="file-icon">↑</span>
             <strong id="fileName">Выберите видеофайл</strong>
-            <small>MP4, WebM, MOV или AVI (MJPEG) · до 10 ГБ в Google Drive</small>
+            <small>Любой видеоформат · до 800 МБ автоматически, большие — через Google Drive</small>
           </label>
         </div>
         <div class="upload-progress" id="uploadProgress" hidden><div><i id="uploadProgressBar"></i></div><span id="uploadProgressText">Загрузка: 0%</span></div>
         <div class="upload-footer" id="uploadFooter" hidden>
-          <p>Фильм откроется в плеере сайта без скачивания. AVI может обрабатываться Google Drive от 10 до 60 минут; быстрее всего готовится MP4. При первой загрузке Google попросит подтвердить доступ.</p>
+          <div class="upload-help">
+            <p>Сайт сам преобразует видео до 800 МБ. Большие файлы до 10 ГБ сначала загрузите, затем запустите облачный конвертер.</p>
+            <a class="drive-converter-link" href="https://colab.research.google.com/drive/1qOQaBpBm9TCsAP6urc5xkJfSGQBXch3T" target="_blank" rel="noopener">Открыть конвертер больших видео ↗</a>
+          </div>
           <button class="button button-primary" id="uploadSubmit" type="submit"><span>＋</span> Добавить фильм</button>
         </div>
       </form>
