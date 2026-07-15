@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f0f12" />
+    <meta
+      name="description"
+      content="Кинотеатр Даня — бесплатные фильмы и мультфильмы для всей семьи."
+    />
+    <title>Кинотеатр Даня — кино для всех</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-DIgI5KBo.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Db1DjtjR.css">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Кинотеатр Даня, на главную">
+        <span class="brand-play" aria-hidden="true"></span>
+        <span>ДАНЯ</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a class="active" href="#catalog">Смотреть</a>
+        <a href="#catalog" data-filter-link="kids">Детям</a>
+        <a href="#collections">Подборки</a>
+        <a href="#about">О нас</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="upload-button" id="uploadButton" type="button">
+          <span aria-hidden="true">＋</span><span class="upload-label">Разместить фильм</span>
+        </button>
+        <button class="icon-button" id="searchToggle" type="button" aria-label="Открыть поиск">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.7"></circle><path d="m16 16 4.2 4.2"></path></svg>
+        </button>
+        <button class="profile-button" id="profileButton" type="button" aria-label="Выбрать профиль">
+          <span class="profile-face">:)</span>
+          <span class="profile-label">Мой профиль</span>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Онлайн-кинотеатр для всех</div>
+          <h1 id="hero-title">Кино для всех.<br /><em>Правда бесплатно.</em></h1>
+          <p class="hero-lead">
+            Фильмы, мультфильмы и истории для зрителей от 0 до 100 лет — без подписки и скрытых платежей.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-play="Лунный экспресс">
+              <span class="play-icon" aria-hidden="true"></span>
+              Смотреть сейчас
+            </button>
+            <a class="button button-ghost" href="#catalog">Выбрать фильм <span>↘</span></a>
+          </div>
+          <div class="hero-notes">
+            <span><b>0 ₽</b> навсегда</span>
+            <span><b>0–100</b> лет</span>
+            <span><b>∞</b> историй</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Подборка фильмов кинотеатра Даня">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-sticker sticker-free">БЕС<br />ПЛАТ<br />НО</div>
+          <article class="poster poster-back poster-sun">
+            <span class="poster-age">6+</span>
+            <div class="poster-art sun-art"><i></i><i></i><i></i></div>
+            <div class="poster-title">СЕМЬ МИНУТ<br />ЛЕТА</div>
+          </article>
+          <article class="poster poster-mid poster-dog">
+            <span class="poster-age">0+</span>
+            <div class="poster-art dog-art"><i></i><i></i><i></i></div>
+            <div class="poster-title">АГЕНТ<br />ПЁС</div>
+          </article>
+          <article class="poster poster-front poster-moon">
+            <span class="poster-age">6+</span>
+            <div class="poster-art moon-art"><i></i><i></i><i></i><i></i></div>
+            <div class="poster-kicker">ПРЕМЬЕРА НЕДЕЛИ</div>
+            <div class="poster-title">ЛУННЫЙ<br />ЭКСПРЕСС</div>
+          </article>
+          <div class="hero-caption">03: приключения<br />для всей семьи</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Преимущества">
+        <div class="ticker-track">
+          <span>БЕЗ ПОДПИСКИ</span><i>✦</i><span>БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ</span><i>✦</i><span>СМОТРИ ГДЕ УГОДНО</span><i>✦</i>
+          <span>БЕЗ ПОДПИСКИ</span><i>✦</i><span>БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ</span><i>✦</i><span>СМОТРИ ГДЕ УГОДНО</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="catalog section-pad" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">01 / СМОТРЕТЬ</p>
+            <h2 id="catalog-title">Что включим?</h2>
+          </div>
+          <p>Мы отбираем добрые, увлекательные и красивые истории — вам остаётся только нажать play.</p>
+        </div>
+
+        <div class="catalog-tools">
+          <div class="filters" role="group" aria-label="Фильтры каталога">
+            <button class="filter active" type="button" data-filter="all">Все</button>
+            <button class="filter" type="button" data-filter="kids">Детям</button>
+            <button class="filter" type="button" data-filter="family">Семейное</button>
+            <button class="filter" type="button" data-filter="comedy">Комедии</button>
+            <button class="filter" type="button" data-filter="adventure">Приключения</button>
+          </div>
+          <label class="search-field" id="searchField">
+            <span class="sr-only">Найти фильм</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.7"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="searchInput" type="search" placeholder="Найти фильм" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="movie-grid" id="movieGrid">
+          <article class="movie-card" data-category="kids family adventure" data-title="Лунный экспресс">
+            <button class="favorite" type="button" aria-label="Добавить Лунный экспресс в избранное">♡</button>
+            <button class="movie-poster card-moon" type="button" data-play="Лунный экспресс">
+              <span class="card-age">6+</span>
+              <span class="card-premiere">Премьера</span>
+              <span class="shape moon"></span><span class="shape train"></span><span class="shape star s1">✦</span><span class="shape star s2">✦</span>
+              <strong>ЛУННЫЙ<br />ЭКСПРЕСС</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Лунный экспресс</h3><p>Приключения · 1 ч 32 мин</p></div>
+          </article>
+
+          <article class="movie-card" data-category="kids comedy" data-title="Агент Пёс">
+            <button class="favorite" type="button" aria-label="Добавить Агент Пёс в избранное">♡</button>
+            <button class="movie-poster card-dog" type="button" data-play="Агент Пёс">
+              <span class="card-age">0+</span>
+              <span class="shape dog-head"></span><span class="shape dog-ear left"></span><span class="shape dog-ear right"></span><span class="shape dog-glasses"></span>
+              <strong>АГЕНТ<br />ПЁС</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Агент Пёс</h3><p>Мультфильм · 54 мин</p></div>
+          </article>
+
+          <article class="movie-card" data-category="family comedy" data-title="Семейный переполох">
+            <button class="favorite" type="button" aria-label="Добавить Семейный переполох в избранное">♡</button>
+            <button class="movie-poster card-family" type="button" data-play="Семейный переполох">
+              <span class="card-age">12+</span>
+              <span class="shape face face-one">•‿•</span><span class="shape face face-two">•ᴗ•</span><span class="shape face face-three">•◡•</span>
+              <strong>СЕМЕЙНЫЙ<br />ПЕРЕПОЛОХ</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Семейный переполох</h3><p>Комедия · 1 ч 41 мин</p></div>
+          </article>
+
+          <article class="movie-card" data-category="family adventure" data-title="Глубже облаков">
+            <button class="favorite" type="button" aria-label="Добавить Глубже облаков в избранное">♡</button>
+            <button class="movie-poster card-cloud" type="button" data-play="Глубже облаков">
+              <span class="card-age">12+</span>
+              <span class="shape cloud c1"></span><span class="shape cloud c2"></span><span class="shape balloon"></span>
+              <strong>ГЛУБЖЕ<br />ОБЛАКОВ</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Глубже облаков</h3><p>Драма · 1 ч 48 мин</p></div>
+          </article>
+
+          <article class="movie-card" data-category="family comedy" data-title="Семь минут лета">
+            <button class="favorite" type="button" aria-label="Добавить Семь минут лета в избранное">♡</button>
+            <button class="movie-poster card-summer" type="button" data-play="Семь минут лета">
+              <span class="card-age">6+</span>
+              <span class="shape summer-sun"></span><span class="shape summer-wave w1"></span><span class="shape summer-wave w2"></span>
+              <strong>СЕМЬ МИНУТ<br />ЛЕТА</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Семь минут лета</h3><p>Семейное · 1 ч 18 мин</p></div>
+          </article>
+
+          <article class="movie-card" data-category="family adventure" data-title="Северный свет">
+            <button class="favorite" type="button" aria-label="Добавить Северный свет в избранное">♡</button>
+            <button class="movie-poster card-north" type="button" data-play="Северный свет">
+              <span class="card-age">16+</span>
+              <span class="shape mountain m1"></span><span class="shape mountain m2"></span><span class="shape aurora"></span>
+              <strong>СЕВЕРНЫЙ<br />СВЕТ</strong>
+              <span class="card-play"><i></i></span>
+            </button>
+            <div class="movie-meta"><h3>Северный свет</h3><p>Драма · 1 ч 56 мин</p></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState">Такого фильма пока нет. Попробуйте другой запрос.</p>
+      </section>
+
+      <section class="collections section-pad" id="collections" aria-labelledby="collections-title">
+        <div class="section-heading collection-heading">
+          <div>
+            <p class="section-number">02 / ПОДБОРКИ</p>
+            <h2 id="collections-title">По настроению</h2>
+          </div>
+          <a href="#catalog" class="text-link">Весь каталог <span>↗</span></a>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-card collection-laugh" href="#catalog" data-collection-filter="comedy">
+            <span class="collection-index">01</span><span class="collection-icon">:D</span>
+            <div><p>Когда хочется</p><h3>Смеяться<br />до слёз</h3><span>8 фильмов →</span></div>
+          </a>
+          <a class="collection-card collection-cozy" href="#catalog" data-collection-filter="family">
+            <span class="collection-index">02</span><span class="collection-icon">⌂</span>
+            <div><p>Для вечера</p><h3>Всем<br />вместе</h3><span>12 фильмов →</span></div>
+          </a>
+          <a class="collection-card collection-wow" href="#catalog" data-collection-filter="adventure">
+            <span class="collection-index">03</span><span class="collection-icon">✦</span>
+            <div><p>Чтобы сказать</p><h3>Вот это<br />поворот!</h3><span>6 фильмов →</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <div class="about-card">
+          <div class="about-mark" aria-hidden="true"><span>Д</span><i></i></div>
+          <div class="about-copy">
+            <p class="section-number">03 / НАШ ПРИНЦИП</p>
+            <h2 id="about-title">Хорошее кино<br />должно быть <em>доступно.</em></h2>
+            <p>Поэтому в «Дане» нет платных уровней, пробных периодов и мелкого шрифта. Выбирайте историю и смотрите — одни, с друзьями или всей семьёй.</p>
+            <div class="about-points">
+              <span><i>✓</i> Всегда бесплатно</span>
+              <span><i>✓</i> Детский режим</span>
+              <span><i>✓</i> На любом устройстве</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section-pad">
+        <div class="cta-inner">
+          <p>Ну что, начинаем?</p>
+          <h2>Ваш вечер.<br /><em>Ваше кино.</em></h2>
+          <a class="button button-light" href="#catalog">Выбрать фильм <span>↗</span></a>
+          <div class="cta-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand brand-footer" href="#top"><span class="brand-play"></span><span>ДАНЯ</span></a>
+      <p>Бесплатный онлайн-кинотеатр<br />для зрителей от 0 до 100 лет.</p>
+      <nav aria-label="Ссылки в подвале"><a href="#catalog">Каталог</a><a href="#collections">Подборки</a><a href="#about">О нас</a></nav>
+      <div class="footer-bottom"><span>© 2026 Кинотеатр Даня</span><span>Сделано с любовью к кино ●</span></div>
+    </footer>
+
+    <div class="modal" id="playerModal" role="dialog" aria-modal="true" aria-labelledby="playerTitle" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="player-shell">
+        <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">×</button>
+        <div class="screen">
+          <div class="screen-glow"></div>
+          <video id="uploadedVideo" controls playsinline hidden></video>
+          <button class="big-play" id="bigPlay" type="button" aria-label="Начать просмотр"><i></i></button>
+          <div class="screen-message" id="screenMessage">Демо-плеер готов к просмотру</div>
+          <div class="player-controls"><span>00:00</span><div><i></i></div><span>01:32:00</span><b>⛶</b></div>
+        </div>
+        <div class="player-info"><div><p>Сейчас смотрите</p><h2 id="playerTitle">Лунный экспресс</h2></div><span>Бесплатно · 6+</span></div>
+      </div>
+    </div>
+
+    <div class="modal upload-modal" id="uploadModal" role="dialog" aria-modal="true" aria-labelledby="uploadTitle" hidden>
+      <div class="modal-backdrop" data-close-upload></div>
+      <form class="upload-shell" id="uploadForm">
+        <button class="modal-close" type="button" data-close-upload aria-label="Закрыть">×</button>
+        <div class="upload-topline">
+          <p class="section-number">ДОБАВИТЬ В КАТАЛОГ</p>
+          <span class="cloud-status" id="cloudStatus"><i></i><b>Облако подключено</b></span>
+        </div>
+        <h2 id="uploadTitle">Разместить<br /><em>свой фильм</em></h2>
+        <section class="owner-gate" id="ownerGate">
+          <div><span class="lock-icon">●</span><div><strong>Вход владельца</strong><p>Размещать фильмы может только владелец кинотеатра.</p></div></div>
+          <label class="form-field"><span>Электронная почта</span><input id="ownerEmail" type="email" autocomplete="email" placeholder="Ваш email" /></label>
+          <label class="form-field"><span>Пароль</span><input id="ownerPassword" type="password" autocomplete="current-password" placeholder="Ваш пароль" /></label>
+          <button class="button button-dark" id="ownerSignIn" type="button">Войти</button>
+        </section>
+        <div class="owner-session" id="ownerSession" hidden><span>✓ Владелец вошёл</span><button id="ownerSignOut" type="button">Выйти</button></div>
+        <div class="upload-grid" id="uploadFields" hidden>
+          <label class="form-field">
+            <span>Название фильма</span>
+            <input id="uploadMovieTitle" name="title" type="text" placeholder="Например, Наше лето" maxlength="60" required />
+          </label>
+          <label class="form-field">
+            <span>Возраст</span>
+            <select id="uploadAge" name="age">
+              <option value="0+">0+</option><option value="6+">6+</option><option value="12+">12+</option><option value="16+">16+</option><option value="18+">18+</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Категория</span>
+            <select id="uploadCategory" name="category">
+              <option value="family">Семейное</option><option value="kids">Детям</option><option value="comedy">Комедия</option><option value="adventure">Приключения</option>
+            </select>
+          </label>
+          <label class="file-drop" id="fileDrop">
+            <input id="uploadFile" name="video" type="file" accept="video/*" required />
+            <span class="file-icon">↑</span>
+            <strong id="fileName">Выберите видеофайл</strong>
+            <small>MP4, WebM или MOV · загружается в защищённое облако</small>
+          </label>
+        </div>
+        <div class="upload-progress" id="uploadProgress" hidden><div><i id="uploadProgressBar"></i></div><span id="uploadProgressText">Загрузка: 0%</span></div>
+        <div class="upload-footer" id="uploadFooter" hidden>
+          <p>После загрузки фильм появится в каталоге и будет доступен всем зрителям на любом устройстве.</p>
+          <button class="button button-primary" id="uploadSubmit" type="submit"><span>＋</span> Добавить фильм</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="profile-panel" id="profilePanel" hidden>
+      <p>Кто сегодня смотрит?</p>
+      <button type="button" data-profile="Все возрасты"><span>:)</span><b>Все возрасты</b></button>
+      <button type="button" data-profile="Детский"><span>★</span><b>Детский</b></button>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
