@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-DIgI5KBo.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Db1DjtjR.css">
+    <script type="module" crossorigin src="./assets/index-ChWLQbin.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BR5Pv-6e.css">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -263,6 +263,7 @@
         <div class="screen">
           <div class="screen-glow"></div>
           <video id="uploadedVideo" controls playsinline hidden></video>
+          <iframe id="embeddedVideo" title="Видеоплеер" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" hidden></iframe>
           <button class="big-play" id="bigPlay" type="button" aria-label="Начать просмотр"><i></i></button>
           <div class="screen-message" id="screenMessage">Демо-плеер готов к просмотру</div>
           <div class="player-controls"><span>00:00</span><div><i></i></div><span>01:32:00</span><b>⛶</b></div>
@@ -304,16 +305,22 @@
               <option value="family">Семейное</option><option value="kids">Детям</option><option value="comedy">Комедия</option><option value="adventure">Приключения</option>
             </select>
           </label>
+          <label class="form-field video-link-field">
+            <span>Ссылка на фильм — бесплатно для больших видео</span>
+            <input id="uploadVideoUrl" name="videoUrl" type="url" inputmode="url" maxlength="2048" placeholder="YouTube, Rutube или VK Видео" />
+            <small>Вставьте ссылку на видео или выберите файл до 50 МБ ниже.</small>
+          </label>
+          <div class="upload-choice" aria-hidden="true"><span>или</span></div>
           <label class="file-drop" id="fileDrop">
-            <input id="uploadFile" name="video" type="file" accept="video/*" required />
+            <input id="uploadFile" name="video" type="file" accept="video/*" />
             <span class="file-icon">↑</span>
             <strong id="fileName">Выберите видеофайл</strong>
-            <small>MP4, WebM или MOV · загружается в защищённое облако</small>
+            <small>MP4, WebM или MOV · до 50 МБ на бесплатном облаке</small>
           </label>
         </div>
         <div class="upload-progress" id="uploadProgress" hidden><div><i id="uploadProgressBar"></i></div><span id="uploadProgressText">Загрузка: 0%</span></div>
         <div class="upload-footer" id="uploadFooter" hidden>
-          <p>После загрузки фильм появится в каталоге и будет доступен всем зрителям на любом устройстве.</p>
+          <p>Добавляйте маленькие файлы прямо в облако, а большие фильмы — бесплатной ссылкой с YouTube, Rutube или VK Видео.</p>
           <button class="button button-primary" id="uploadSubmit" type="submit"><span>＋</span> Добавить фильм</button>
         </div>
       </form>
